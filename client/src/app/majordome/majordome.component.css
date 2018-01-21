@@ -1,15 +1,22 @@
-.checkbox{
+.checkbox {
     margin-top: 20px;
 }
-body {
+
+.alfredPhoto {
     background-image: url("/assets/alfred_1.jpg");
     background-color: #cccccc;
-    height:660px
- }
- .checkbox > label{
-     color: #cccccc;
- }
+    height: 660px
+}
 
- h1{
+.checkbox>label {
     color: #cccccc;
- }
+}
+
+h1 {
+    color: #cccccc;
+}
+
+.checkbox h1 {
+    color: black;
+    font-size: 26px;
+}

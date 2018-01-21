@@ -1,29 +1,25 @@
-<body>
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:rgba(54,60,66,1) !important;">
+    <div class="container">
+        <h2 style="color:white;font-weight:bold;">Pour quels services voulez-vous servir ? </h2>
+        <a class="navbar-brand" href="/" style="font-weight:bold;">Alfred<img class="majordomelogo" src="/assets/logomajordome.png" /></a>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container" style="margin:60px 35px 10px 35px;padding:25px 12%; color: black">
     <div class="checkbox">
-            <label><input type="checkbox" [(ngModel)]="childChosen" ng-init="childChosen = false">Service de Gardiennage</label>
+        <label><h1><input type="checkbox" [(ngModel)]="childChosen" ng-init="childChosen = false"> Service de Gardiennage</h1></label>
     </div>
     <div class="checkbox">
-        <label><input type="checkbox" [(ngModel)]="animalChosen" ng-init="animalChosen = false">service pour animaux</label>
+        <label><h1><input type="checkbox" [(ngModel)]="animalChosen" ng-init="animalChosen = false"> Service pour animaux</h1></label>
     </div>
     <div class="checkbox">
-        <label><input type="checkbox" [(ngModel)]="groceryChosen" ng-init="groceryChosen = false">Epicerie</label>
+        <label><h1><input type="checkbox" [(ngModel)]="groceryChosen" ng-init="groceryChosen = false"> Épicerie</h1></label>
     </div>
-    <div *ngIf="childChosen">
-        <h1>Service de Gardiennage</h1>
-        <div *ngFor="let animal of listeAnimaux" |async>
-            <li > {{animal.nom}} </li>
-        </div>
-    </div>
-    <div *ngIf="animalChosen">
-        <h1>Service Animal</h1>
-    </div>
-    <div *ngIf="groceryChosen">
-            <h1>Epicerie</h1>
-    </div>
+    <br />
+    <button type="button" class="btn btn-primary btn-lg" RouterLinkActive="active" [routerLink]="['marchandEnAttente']">En attente d'un client</button>
+</div>
 
-
-    </div>
-
-
-
-</body>
+<div class="alfredPhoto">
+</div>
