@@ -14,7 +14,7 @@ export class AnimauxComponent implements OnInit {
 
   ngOnInit() {
     this.animal = new Animal();
-    this.socket = socketIO.connect('http://localhost:3000');
+    this.socket = socketIO.connect('10.200.10.215:3000');
   }
 
   private sauvegarderAnimal() {
