@@ -18,7 +18,6 @@ export class ServiceGarderieComponent implements OnInit {
   }
 
   private sauvegarderGarderie() {
-    console.log('garderie : ', this.garderie);
-    
+    this.socket.emit('gardiennage', JSON.stringify(this.garderie));
   }
 }

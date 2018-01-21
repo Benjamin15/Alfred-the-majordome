@@ -20,14 +20,17 @@ export class AttenteCommandeComponent implements OnInit, AfterViewInit {
     public animaux = RechercheMajordome.animal;
     public animal: Animal;
     ngOnInit() {
-        console.log(this.animaux);
         this.socket = socketIO.connect('10.200.10.215:3000');
-        this.socket.on('animal majordome', (obj) => {
-            this.subjectAnimal.next(JSON.parse(obj));
-        });
     }
 
     ngAfterViewInit() {
+        this.socket.on('animal majordome', (obj) => {
+            this.subjectAnimal.next(JSON.parse(obj));
+        });
+        this.socket.on('gardiennage majordome', (obj) => {
+            console.log('Boom');
+            console.log(JSON.parse(obj));
+        });
         this.subjectAnimal.asObservable().subscribe( (value) => {
             this.animal = value;
         });

@@ -11,19 +11,19 @@
     <div class="forms">
         <div class="form-group">
             <label for="usr">Nombre d'enfants:</label>
-            <input type="text" class="form-control" id="childNumber" [(ngModel)]='garderie.nombre'>
+            <input type="number" class="form-control" id="childNumber" [(ngModel)]='garderie.nombre'>
         </div>
         <div class="form-group">
             <label for="pwd">Adresse:</label>
-            <input type="password" class="form-control" id="Adresse" [(ngModel)]='garderie.adresse'>
+            <input type="text" class="form-control" id="Adresse" [(ngModel)]='garderie.adresse'>
         </div>
         <div class="form-group">
             <label for="usr">Heure de début:</label>
-            <input type="text" class="form-control" id="startTime" [(ngModel)]='garderie.debut'>
+            <input type="number" class="form-control" id="startTime" [(ngModel)]='garderie.debut'>
         </div>
         <div class="form-group">
             <label for="pwd">Heure de fin:</label>
-            <input type="password" class="form-control" id="EndTime" [(ngModel)]='garderie.fin'>
+            <input type="number" class="form-control" id="endTime" [(ngModel)]='garderie.fin'>
         </div>
         <div class="form-group">
             <label for="comment">Commentaires:</label>
