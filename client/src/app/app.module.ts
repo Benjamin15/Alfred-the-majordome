@@ -1,5 +1,7 @@
+import { AnimauxComponent } from './ServiceAnimaux/animaux.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import {EpicerieComponent} from './serviceEpicerie/epicerie.component';
@@ -8,20 +10,23 @@ import { AppComponent } from './app.component';
 
 
 const appRoutes: Routes = [
-  { path: 'epicerie', component: EpicerieComponent }
+  { path: 'epicerie', component: EpicerieComponent },
+  { path: 'animaux', component: AnimauxComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    EpicerieComponent
+    EpicerieComponent,
+    AnimauxComponent
   ],
   imports: [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ),
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
