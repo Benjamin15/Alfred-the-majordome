@@ -1,0 +1,55 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:rgba(54,60,66,1) !important;">
+        <div class="container">
+            <h2 style="color:white;font-weight:bold;">Majordomes</h2>
+            <a class="navbar-brand" href="/" style="font-weight:bold;">Alfred<img class="majordomelogo" src="/assets/logomajordome.png" /></a>
+        </div>
+</nav>
+<body>
+  
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 73px;">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('assets/marc.jpg')">
+            <a href="/gardien">
+                <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['gardiennage']">Service de Gardiennage</button>
+                </div>
+            </a>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('assets/momo.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['marchandise']">Epicerie</button>
+            </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('assets/jo.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['animaux']">Prise en charge d'animaux</button>
+            </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('assets/younes.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['animaux']">Prise en charge d'animaux</button>
+          </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- Page Content -->
+<!-- /.container -->
+</body>

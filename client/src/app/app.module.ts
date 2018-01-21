@@ -1,3 +1,4 @@
+import { ListMajordomeComponent } from './majordome/listMajordome.component';
 import { ServiceGarderieComponent } from './ServiceGarderie/serviceGarderie.component';
 import { AuthGuard } from './AuthGuard';
 import { ValidationCommandeComponent } from './ValidationCommande/validation-commande.component';
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   { path: 'validation-commande', component: ValidationCommandeComponent, canActivate: [AuthGuard] },
   { path: '', component: AccueilComponent},
   { path: 'majordome', component: MajordomeComponent },
-  { path: 'gardiennage', component: ServiceGarderieComponent},
+  { path: 'gardien', component: ServiceGarderieComponent},
+  { path: 'list-Majordome', component: ListMajordomeComponent},
 ];
 
 @NgModule({
@@ -30,6 +32,7 @@ const appRoutes: Routes = [
     AccueilComponent,
     MajordomeComponent,
     ServiceGarderieComponent,
+    ListMajordomeComponent
   ],
   imports: [
     RouterModule.forRoot(
