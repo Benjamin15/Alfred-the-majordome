@@ -6,8 +6,6 @@ import { OnInit, AfterViewInit } from '@angular/core/src/metadata/lifecycle_hook
 import { Subject } from 'rxjs/Subject';
 import * as socketIO from 'socket.io-client';
 
-
-
 class Product {
     public article: string;
     public nArticle: number;
@@ -47,10 +45,6 @@ export class AttenteCommandeComponent implements OnInit, AfterViewInit {
             this.subjectGardiennage.next(JSON.parse(obj));
         });
 
-        /*this.socket.on('groccing majordome', (obj) => {
-            this.subjectGrossing.next(JSON.parse(obj));
-        });*/
-
         this.socket.on('marchandise majordome', (obj) => {
             console.log('marchandise reçu');
             this.subjectEpicerie.next(JSON.parse(obj));
@@ -69,9 +63,6 @@ export class AttenteCommandeComponent implements OnInit, AfterViewInit {
             this.epicerie = value;
         });
 
-       /* this.subjectGrossing.asObservable().subscribe((value) => {
-
-        });*/
     }
 
     confirmation() {
