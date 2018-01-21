@@ -1,3 +1,4 @@
+import { AuthGuard } from './AuthGuard';
 import { ValidationCommandeComponent } from './ValidationCommande/validation-commande.component';
 import { MajordomeComponent } from './majordome/majordome.component';
 import { AnimauxComponent } from './ServiceAnimaux/animaux.component';
@@ -10,11 +11,10 @@ import {EpicerieComponent} from './serviceEpicerie/epicerie.component';
 
 import { AppComponent } from './app.component';
 
-
 const appRoutes: Routes = [
   { path: 'marchandise', component: EpicerieComponent },
   { path: 'animaux', component: AnimauxComponent },
-  { path: 'validation-commande', component: ValidationCommandeComponent},
+  { path: 'validation-commande', component: ValidationCommandeComponent, canActivate: [AuthGuard] },
   { path: '', component: AccueilComponent},
   { path: 'majordome', component: MajordomeComponent },
 ];
@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
