@@ -13,15 +13,15 @@
     <div class="alfredPhoto">
     </div>
     <div class="checkbox">
-        <label><h1><input type="checkbox" [(ngModel)]="childChosen" ng-init="childChosen = false"> Service de Gardiennage</h1></label>
+        <label><h1><input type="checkbox" (change)="childOnClick()" [(ngModel)]="childChosen" ng-init="childChosen = false"> Service de Gardiennage</h1></label>
     </div>
     <div class="checkbox">
-        <label><h1><input type="checkbox" [(ngModel)]="animalChosen" ng-init="animalChosen = false"> Service pour animaux</h1></label>
+        <label><h1><input type="checkbox" (change)="animalOnClick()" [(ngModel)]="animalChosen" ng-init="animalChosen = false"> Service pour animaux</h1></label>
     </div>
     <div class="checkbox">
-        <label><h1><input type="checkbox" [(ngModel)]="groceryChosen" ng-init="groceryChosen = false"> Épicerie</h1></label>
+        <label><h1><input type="checkbox" (change)="magasinageOnClick()" [(ngModel)]="groceryChosen" ng-init="groceryChosen = false"> Épicerie</h1></label>
     </div>
     <br />
-    <button type="button" class="btn btn-primary btn-lg" RouterLinkActive="active" [routerLink]="['marchandEnAttente']">En attente d'un client</button>
+    <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/', 'marchandEnAttente']">En attente d'un client</button>
 </div>
 <div style="clear:left;"></div>

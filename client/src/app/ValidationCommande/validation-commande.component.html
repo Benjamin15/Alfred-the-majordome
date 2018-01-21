@@ -11,8 +11,14 @@
 
     <h1>Service d'épicerie - Votre liste d'épicerie</h1>
     <div class="container">
+            
+    <div *ngFor="let product of articles">
 
-        <div *ngFor="let product of articles">
+        <div *ngIf="product.article == 'Fromage'" class="row">
+            <div class="col-sm"> <img src="assets/p1.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </div>
+            <div class="col-sm"> {{product.article}} </div>
+            <div class="col-sm"> {{product.nArticle}} </div>
+        </div>
 
             <div *ngIf="product.article == 'Fromage'" class="row">
                 <div class="col-sm"> <img src="assets/p1.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
@@ -24,25 +30,25 @@
                 <div class="col-sm"> <img src="assets/p2.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
                 <div class="col-sm"> {{product.article}} </div>
                 <div class="col-sm"> {{product.nArticle}} </div>
-            </div>
+        </div>
 
             <div *ngIf="product.article == 'Banane'" class="row">
                 <div class="col-sm"> <img src="assets/p3.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
                 <div class="col-sm"> {{product.article}} </div>
                 <div class="col-sm"> {{product.nArticle}} </div>
-            </div>
+        </div>
 
             <div *ngIf="product.article == 'Rosbif'" class="row">
                 <div class="col-sm"> <img src="assets/p4.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
                 <div class="col-sm"> {{product.article}} </div>
                 <div class="col-sm"> {{product.nArticle}} </div>
-            </div>
+        </div>
 
             <div *ngIf="product.article == 'Canard'" class="row">
                 <div class="col-sm"> <img src="assets/p5.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
                 <div class="col-sm"> {{product.article}} </div>
                 <div class="col-sm"> {{product.nArticle}} </div>
-            </div>
+        </div>
 
             <div *ngIf="product.article == 'Saumon'" class="row">
                 <div class="col-sm"> <img src="assets/p6.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
@@ -54,22 +60,22 @@
                 <div class="col-sm"> <img src="assets/p7.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
                 <div class="col-sm"> {{product.article}} </div>
                 <div class="col-sm"> {{product.nArticle}} </div>
-            </div>
+        </div>
 
             <div *ngIf="product.article == 'Baguette'" class="row">
                 <div class="col-sm"> <img src="assets/p8.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
                 <div class="col-sm"> {{product.article}} </div>
                 <div class="col-sm"> {{product.nArticle}} </div>
-            </div>
+        </div>
 
             <div *ngIf="product.article == 'Velo'" class="row">
                 <div class="col-sm"> <img src="assets/p9.jpg" alt="Img" class="product-grid__img" height="80" width="80" /> </div>
                 <div class="col-sm"> {{product.article}} </div>
                 <div class="col-sm"> {{product.nArticle}} </div>
-            </div>
         </div>
         <br />
         <a href="majordome" class="btn btn-primary btn-lg" role="button">Rechercher majordome</a>
 
     </div>
-    <!-- END MAIN -->
+</div>
+<!-- END MAIN -->

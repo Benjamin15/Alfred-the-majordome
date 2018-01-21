@@ -1,4 +1,5 @@
 import { ListMajordomeComponent } from './majordome/listMajordome.component';
+import { AttenteCommandeComponent } from './attente-commande/attente-commande.component';
 import { ServiceGarderieComponent } from './ServiceGarderie/serviceGarderie.component';
 import { AuthGuard } from './AuthGuard';
 import { ValidationCommandeComponent } from './ValidationCommande/validation-commande.component';
@@ -10,7 +11,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import {EpicerieComponent} from './serviceEpicerie/epicerie.component';
-
 import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
@@ -21,6 +21,7 @@ const appRoutes: Routes = [
   { path: 'majordome', component: MajordomeComponent },
   { path: 'gardien', component: ServiceGarderieComponent},
   { path: 'list-Majordome', component: ListMajordomeComponent},
+  { path: 'marchandEnAttente', component: AttenteCommandeComponent  }
 ];
 
 @NgModule({
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     AccueilComponent,
     MajordomeComponent,
     ServiceGarderieComponent,
+    AttenteCommandeComponent,
     ListMajordomeComponent
   ],
   imports: [
