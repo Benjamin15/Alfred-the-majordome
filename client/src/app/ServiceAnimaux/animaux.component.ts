@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./animaux.component.css']
 })
 export class AnimauxComponent {
-  
+  private nomAnimal: string;
+  private description: string;
+  private besoinsSpecifiques: string;
 }
