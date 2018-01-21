@@ -34,7 +34,7 @@ export class ValidationCommandeComponent implements OnInit {
     this.socket = socketIO.connect('10.200.10.215:3000');
   }
 
-  public sendCommande() {
-    this.socket.emit('marchandise', JSON.stringify(this.achats));
+  public sauvegarderCommande() {
+    this.socket.emit('marchandise', JSON.stringify(this.articles));
   }
 }
