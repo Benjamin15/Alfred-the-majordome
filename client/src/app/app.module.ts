@@ -1,3 +1,4 @@
+import { ServiceGarderieComponent } from './ServiceGarderie/serviceGarderie.component';
 import { AuthGuard } from './AuthGuard';
 import { ValidationCommandeComponent } from './ValidationCommande/validation-commande.component';
 import { MajordomeComponent } from './majordome/majordome.component';
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'validation-commande', component: ValidationCommandeComponent, canActivate: [AuthGuard] },
   { path: '', component: AccueilComponent},
   { path: 'majordome', component: MajordomeComponent },
+  { path: 'gardiennage', component: ServiceGarderieComponent},
 ];
 
 @NgModule({
@@ -26,7 +28,8 @@ const appRoutes: Routes = [
     AnimauxComponent,
     ValidationCommandeComponent,
     AccueilComponent,
-    MajordomeComponent
+    MajordomeComponent,
+    ServiceGarderieComponent,
   ],
   imports: [
     RouterModule.forRoot(
