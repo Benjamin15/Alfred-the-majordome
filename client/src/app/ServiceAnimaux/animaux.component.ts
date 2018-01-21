@@ -19,5 +19,6 @@ export class AnimauxComponent implements OnInit {
 
   private sauvegarderAnimal() {
     console.log('Boom', JSON.stringify(this.animal));
+    this.socket.emit('animal', JSON.stringify(this.animal));
   }
 }

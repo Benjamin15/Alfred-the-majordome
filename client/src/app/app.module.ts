@@ -1,3 +1,4 @@
+import { MajordomeComponent } from './majordome/majordome.component';
 import { AnimauxComponent } from './ServiceAnimaux/animaux.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     EpicerieComponent,
-    AnimauxComponent
+    AnimauxComponent,
+    MajordomeComponent
   ],
   imports: [
     RouterModule.forRoot(

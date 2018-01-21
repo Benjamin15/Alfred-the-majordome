@@ -8,6 +8,10 @@ app.get('/', function(req, res) {
 
 io.on('connection', function(socket) {
     console.log('a user connected');
+    socket.on('animal', function(obj) {
+        console.log('Animal recu : ', obj);
+        socket.broadcast('animal marchand', obj);
+    });
 });
 
 http.listen(3000, function() {
