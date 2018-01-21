@@ -14,6 +14,11 @@ export class MajordomeComponent implements OnInit {
     private listeAnimaux: Array<Animal>;
 
     ngOnInit() {
+        this.listeAnimaux = new Array(2);
+        const animalA = new Animal('Animal A', 'Chien berger', 'Allergique au pecans');
+        const animalB = new Animal('Animal B', 'Chat persan', 'Besoin de deux medicaments chaque soir');
+        this.listeAnimaux.push(animalB);
+        this.listeAnimaux.push(animalB);
         this.socket = socketIO.connect('10.200.10.215:3000');
         this.socket.on('animal majordome', (obj) => {
             console.log('Majordome : ', obj);
