@@ -44,6 +44,7 @@ export class AttenteCommandeComponent implements OnInit, AfterViewInit {
         this.socket.on('gardiennage majordome', (obj) => {
             console.log('Boom');
             console.log(JSON.parse(obj));
+            this.subjectGardiennage.next(JSON.parse(obj));
         });
 
         /*this.socket.on('groccing majordome', (obj) => {

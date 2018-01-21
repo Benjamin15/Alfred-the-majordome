@@ -29,6 +29,27 @@
             <label for="comment">Commentaires:</label>
             <textarea class="form-control" rows="5" id="comment" [(ngModel)]='garderie.commentaires'></textarea>
         </div>
-        <a href="majordome" class="btn btn-primary btn-lg" role="button" (click)='sauvegarderGarderie()'>Rechercher majordome</a>
+        <button type="button" (click)='sauvegarderGarderie()' class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+            Rechercher majordome
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Recherche d'un majordome</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body" style="background-color: rgb(20,20,20);
+                    color: white;text-align:center;">
+                        <img width="100%" src="http://localhost:4200/assets/loading-anime.gif" />
+                        <h1 style="margin-top:-45px;">En attente d'un majordome ...</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
