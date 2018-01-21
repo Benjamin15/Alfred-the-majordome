@@ -147,7 +147,7 @@
                                         <div class="col-sm"> {{product.nArticle}} </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal" RouterLinkActive="active" [routerLink]="['']">Je confirme.</button>
+                                        <button type="button" class="btn btn-primary" (click)="confirmation()" data-dismiss="modal" RouterLinkActive="active" [routerLink]="['']">Je confirme.</button>
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Je refuse.</button>
                                     </div>
                                 </div>
