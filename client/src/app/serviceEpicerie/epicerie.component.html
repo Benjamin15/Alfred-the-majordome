@@ -1,164 +1,172 @@
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:rgba(54,60,66,1) !important;">
+    <div class="container">
+        <h2 style="color:white;font-weight:bold;">De quoi avez vous besoin ? </h2>
+        <a class="navbar-brand" href="/" style="font-weight:bold;">Alfred<img class="majordomelogo" src="/assets/logomajordome.png" /></a>
+    </div>
+</nav>
+
 <div class="wrapper">
-	<div class="desc">
-		<h1>Listes des marchandises</h1>
-	</div>
+    <div class="desc">
+        <h1>Listes des marchandises</h1>
+    </div>
 
-	<div class="content">
-		<!-- content here -->
-		<div class="product-grid product-grid--flexbox">
-			<a [routerLink]="['/', 'validation-commande']"><img src="/assets/icone.png" height="20" width="20"> {{nArticle}}</a>
-			
-				
-			<div class="product-grid__wrapper ">
-				<!-- Product list start here -->				
-				<!-- Single product -->
+    <div class="content">
+        <!-- content here -->
+        <div class="product-grid product-grid--flexbox">
+            <a [routerLink]="['/', 'validation-commande']"><img src="/assets/icone.png" height="20" width="20"> {{nArticle}}</a>
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p1.jpeg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Fromage</span>
-						<span class="product-grid__price">10$</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Un fromage</p>
-								<button class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Fromage')"><i class="fa fa-cart-arrow-down"></i> Add to cart</button>				
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end Single product -->
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p2.jpg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Pomme</span>
-						<span class="product-grid__price">0.33$ </span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Une bonne pomme</p>
-								<span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Pomme')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-							</div>
-						</div>
-					</div>
-				</div>
+            <div class="product-grid__wrapper ">
+                <!-- Product list start here -->
+                <!-- Single product -->
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p3.jpg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Banane</span>
-						<span class="product-grid__price">0.33$</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Une bonne banane</p>
-								<span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Banane')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p1.jpeg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Fromage</span>
+                        <span class="product-grid__price">10$</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Un fromage</p>
+                                <button class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Fromage')"><i class="fa fa-cart-arrow-down"></i> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Single product -->
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p4.jpg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Rosbif</span>
-						<span class="product-grid__price">22$/kg</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Rosbif français non bardé.</p>
-								<span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Rosbif')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p2.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Pomme</span>
+                        <span class="product-grid__price">0.33$ </span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Une bonne pomme</p>
+                                <span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Pomme')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p5.jpg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Canard</span>
-						<span class="product-grid__price">5.32$/unité</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Cuisse de canard fraiche</p>
-								<span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Canard')" ><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p3.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Banane</span>
+                        <span class="product-grid__price">0.33$</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Une bonne banane</p>
+                                <span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Banane')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p6.jpg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Saumon</span>
-						<span class="product-grid__price">5.73 $</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Filer de saumon de l'Atlantique du canada frais</p>
-								<span class="product-grid__btn product-grid__add-to-cart"  (click)="addItem('Saumon')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p4.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Rosbif</span>
+                        <span class="product-grid__price">22$/kg</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Rosbif français non bardé.</p>
+                                <span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Rosbif')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p7.jpg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Thon</span>
-						<span class="product-grid__price">14.99 $</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Darnes de thon sans arêtes surgelées
-									340 g</p>
-								<span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Thon')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p5.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Canard</span>
+                        <span class="product-grid__price">5.32$/unité</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Cuisse de canard fraiche</p>
+                                <span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Canard')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p8.jpg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Baguette</span>
-						<span class="product-grid__price">3$</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Baguette chaude</p>
-								<span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Baguette')" ><i class="fa fa-cart-arrow-down" ></i> Add to cart</span>				
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p6.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Saumon</span>
+                        <span class="product-grid__price">5.73 $</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Filer de saumon de l'Atlantique du canada frais</p>
+                                <span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Saumon')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<div class="product-grid__img-wrapper">			
-							<img src="assets/p1.jpg" alt="Img" class="product-grid__img" />
-						</div>
-						<span class="product-grid__title">Velo</span>
-						<span class="product-grid__price">1100$ </span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<p class="product-grid__description">Faites le tour du monde en vélo sans quitter votre maison. Le vélo stationnaire Grand Tour de NordicTrack vous permet de faire du vélo en sélectionnant un trajet sur l'écran tactile de 7 po et en le suivant sur Google Street View. Mettez-vous au défi avec 32 programmes d’entraînement préréglés et une inclinaison variable. De plus, faites travailler vos bras avec les deux haltères de 3 lb.</p>
-								<span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Velo')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
-	</div>
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p7.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Thon</span>
+                        <span class="product-grid__price">14.99 $</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Darnes de thon sans arêtes surgelées 340 g</p>
+                                <span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Thon')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p8.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Baguette</span>
+                        <span class="product-grid__price">3$</span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Baguette chaude</p>
+                                <span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Baguette')"><i class="fa fa-cart-arrow-down" ></i> Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-grid__product-wrapper">
+                    <div class="product-grid__product">
+                        <div class="product-grid__img-wrapper">
+                            <img src="assets/p1.jpg" alt="Img" class="product-grid__img" />
+                        </div>
+                        <span class="product-grid__title">Velo</span>
+                        <span class="product-grid__price">1100$ </span>
+                        <div class="product-grid__extend-wrapper">
+                            <div class="product-grid__extend">
+                                <p class="product-grid__description">Faites le tour du monde en vélo sans quitter votre maison. Le vélo stationnaire Grand Tour de NordicTrack vous permet de faire du vélo en sélectionnant un trajet sur l'écran tactile de 7 po et en le suivant sur Google Street
+                                    View. Mettez-vous au défi avec 32 programmes d’entraînement préréglés et une inclinaison variable. De plus, faites travailler vos bras avec les deux haltères de 3 lb.</p>
+                                <span class="product-grid__btn product-grid__add-to-cart" (click)="addItem('Velo')"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

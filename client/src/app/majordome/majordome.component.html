@@ -1,22 +1,30 @@
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:rgba(54,60,66,1) !important;">
+    <div class="container">
+        <h2 style="color:white;font-weight:bold;">Pour quoi voulez-vous servir ? </h2>
+        <a class="navbar-brand" href="/" style="font-weight:bold;">Alfred<img class="majordomelogo" src="/assets/logomajordome.png" /></a>
+    </div>
+</nav>
+
 <body>
-        <div class="checkbox">
-                <label><input type="checkbox" [(ngModel)]="childChosen" ng-init="childChosen = false">Service de Gardiennage</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" [(ngModel)]="animalChosen" ng-init="animalChosen = false">service pour animaux</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" [(ngModel)]="groceryChosen" ng-init="groceryChosen = false">Epicerie</label>
-        </div>
-        <div *ngIf="childChosen">
-         <h1>Service de Gardiennage</h1>
-         <li *ngFor='let animal of listeAnimaux'> {{animal}} </li>
-        </div>
-        <div *ngIf="animalChosen">
-            <h1>Service Animal</h1>
-        </div>
-        <div *ngIf="groceryChosen">
-             <h1>Epicerie</h1>
-        </div>
-       
+    <div class="checkbox">
+        <label><input type="checkbox" [(ngModel)]="childChosen" ng-init="childChosen = false">Service de Gardiennage</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" [(ngModel)]="animalChosen" ng-init="animalChosen = false">service pour animaux</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" [(ngModel)]="groceryChosen" ng-init="groceryChosen = false">Epicerie</label>
+    </div>
+    <div *ngIf="childChosen">
+        <h1>Service de Gardiennage</h1>
+        <li *ngFor='let animal of listeAnimaux'> {{animal}} </li>
+    </div>
+    <div *ngIf="animalChosen">
+        <h1>Service Animal</h1>
+    </div>
+    <div *ngIf="groceryChosen">
+        <h1>Epicerie</h1>
+    </div>
+
 </body>
