@@ -4,25 +4,27 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import * as socketIO from 'socket.io-client';
 
 @Component({
-    selector: 'majordome',
+    selector: 'app-majordome',
     templateUrl: './majordome.component.html',
     styleUrls: ['./majordome.component.css']
 })
 
 export class MajordomeComponent implements OnInit {
     private socket: socketIO.Socket;
-    private listeAnimaux: Array<Animal>;
+    public listeAnimaux: Array<Animal>;
+    public mapMarchandise: Array<Map<string, number>>;
 
     ngOnInit() {
-        this.listeAnimaux = new Array(2);
-        const animalA = new Animal('Animal A', 'Chien berger', 'Allergique au pecans');
-        const animalB = new Animal('Animal B', 'Chat persan', 'Besoin de deux medicaments chaque soir');
-        this.listeAnimaux.push(animalB);
-        this.listeAnimaux.push(animalB);
+        this.listeAnimaux = new Array<Animal>();
+        this.mapMarchandise = new Array<Map<string, number>>();
         this.socket = socketIO.connect('10.200.10.215:3000');
         this.socket.on('animal majordome', (obj) => {
-            console.log('Majordome : ', obj);
             this.listeAnimaux.push(JSON.parse(obj));
+        });
+
+
+        this.socket.on('marchandise majordome', (obj) => {
+            this.mapMarchandise.push(new Map<string, number>());
         });
     }
 }

@@ -1,7 +1,7 @@
 export class Animal {
-    private nomAnimal: string;
-    private description: string;
-    private besoinsSpecifiques: string;
+    public nomAnimal: string;
+    public description: string;
+    public besoinsSpecifiques: string;
 
     constructor(nom: string, description: string, besoins: string) {
         this.nomAnimal = nom;

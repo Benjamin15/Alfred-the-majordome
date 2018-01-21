@@ -4,7 +4,7 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import * as socketIO from 'socket.io-client';
 
 @Component({
-  selector: 'service-animaux',
+  selector: 'app-service-animaux',
   templateUrl: './animaux.component.html',
   styleUrls: ['./animaux.component.css']
 })
@@ -13,7 +13,7 @@ export class AnimauxComponent implements OnInit {
   private socket: socketIO.Socket;
 
   ngOnInit() {
-    this.animal = new Animal();
+    this.animal = new Animal('', '', '');
     this.socket = socketIO.connect('10.200.10.215:3000');
   }
 
