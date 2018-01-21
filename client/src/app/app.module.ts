@@ -16,7 +16,6 @@ const appRoutes: Routes = [
   { path: 'animaux', component: AnimauxComponent },
   { path: 'validation-commande', component: ValidationCommandeComponent},
   { path: '', component: AccueilComponent},
-  { path: 'animaux', component: AnimauxComponent },
   { path: 'majordome', component: MajordomeComponent },
 ];
 

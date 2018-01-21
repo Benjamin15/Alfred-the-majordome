@@ -9,20 +9,20 @@
         <div class="carousel-item active" style="background-image: url('assets/child.jpg')">
             <a href="/gardien">
                 <div class="carousel-caption d-none d-md-block">
-                    <button type="button" class="btn btn-info">Service de Gardiennage</button>
+                    <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['gardiennage']">Service de Gardiennage</button>
                 </div>
             </a>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('assets/grocery.jpg')">
             <div class="carousel-caption d-none d-md-block">
-                <button type="button" class="btn btn-info">Epicerie</button>
+                <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['marchandise']">Epicerie</button>
             </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('assets/animal.jpg')">
             <div class="carousel-caption d-none d-md-block">
-                <button type="button" class="btn btn-info">Prise en charge d'animaux</button>
+                <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['animaux']">Prise en charge d'animaux</button>
             </div>
         </div>
     </div>
@@ -42,10 +42,10 @@
 
     <div class="row">
         <div class="col">
-            <button type="button" class="btn btn-primary btn-lg">Accès<br />majordome</button>
+            <button type="button" class="btn btn-primary btn-lg" RouterLinkActive="active" [routerLink]="['majordome']">Accès<br />majordome</button>
         </div>
         <div class="col">
-            <button type="button" class="btn btn-primary btn-lg">Accès<br />marchand</button>
+            <button type="button" class="btn btn-primary btn-lg" RouterLinkActive="active" [routerLink]="['marchand']">Accès<br />marchand</button>
         </div>
     </div>
 </div>

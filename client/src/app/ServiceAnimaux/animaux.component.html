@@ -1,12 +1,13 @@
-<h1> SERVICE ANIMAUX </h1>
-<h2> Service de gardiennage et de promenade d'animaux </h2>
-<div> Nom de l'animal <input [(ngModel)]='animal.nomAnimal'> </div>
-<div> Nom (Animal) : {{ animal.nomAnimal }} </div>
-<div> Description <input [(ngModel)]='animal.description'> </div>
-<div> Description : {{ animal.description }} </div>
-<div> Besoins spécifiques <input [(ngModel)]='animal.besoinsSpecifiques'> </div>
-<div> Besoins spécifiques : {{ animal.besoinsSpecifiques }} </div>
+<!-- Page Content -->
+<div class="container" style="padding:25px">
+    <h1> SERVICE ANIMAUX </h1>
+    <h2> Service de gardiennage et de promenade d'animaux </h2>
+    <div> Nom de l'animal:<br /><input [(ngModel)]='animal.nomAnimal'> </div>
+    <div> Nom (Animal) : <br />{{ animal.nomAnimal }} </div><br />
+    <div> Description <br /><input [(ngModel)]='animal.description'> </div>
+    <div> Description : <br />{{ animal.description }} </div><br />
+    <div> Besoins spécifiques <br /><input [(ngModel)]='animal.besoinsSpecifiques'> </div>
+    <div> Besoins spécifiques : <br />{{ animal.besoinsSpecifiques }} </div><br />
 
-<button (click)='sauvegarderAnimal()'> Demander le service </button>
-
-
+    <button type="button" class="btn btn-primary btn-lg" (click)='sauvegarderAnimal()'> Demander ce service </button>
+</div>
