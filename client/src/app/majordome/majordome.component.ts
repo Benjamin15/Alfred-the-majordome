@@ -13,5 +13,8 @@ export class MajordomeComponent implements OnInit {
 
     ngOnInit() {
         this.socket = socketIO.connect('http://localhost:3000');
+        this.socket.on('animal majordome', function(obj) {
+            console.log('Majordome : ', obj);
+        });
     }
 }

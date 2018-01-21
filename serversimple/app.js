@@ -10,7 +10,7 @@ io.on('connection', function(socket) {
     console.log('a user connected');
     socket.on('animal', function(obj) {
         console.log('Animal recu : ', obj);
-        socket.broadcast('animal marchand', obj);
+        socket.broadcast.emit('animal majordome', obj);
     });
 });
 

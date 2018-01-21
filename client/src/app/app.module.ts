@@ -14,6 +14,7 @@ const appRoutes: Routes = [
   { path: 'epicerie', component: EpicerieComponent },
   { path: '', component: AccueilComponent},
   { path: 'animaux', component: AnimauxComponent },
+  { path: 'majordome', component: MajordomeComponent },
 ];
 
 @NgModule({
