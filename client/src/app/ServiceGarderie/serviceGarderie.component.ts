@@ -14,4 +14,6 @@ export class ServiceGarderieComponent implements OnInit {
   ngOnInit() {
     this.socket = socketIO.connect('10.200.10.215:3000');
   }
+
+  
 }

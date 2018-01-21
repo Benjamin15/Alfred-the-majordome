@@ -12,6 +12,10 @@ io.on('connection', function(socket) {
         console.log('Animal recu : ', obj);
         socket.broadcast.emit('animal majordome', obj);
     });
+    socket.on('gardiennage', function(obj) {
+        console.log('Gardiennage recu : ', obj);
+        socket.broadcast.emit('gardiennage majordome', obj);
+    });
     socket.on('marchandise', function(obj) {
         console.log('marchandise recu recu : ', obj);
         socket.broadcast.emit('marchandise majordome', obj);
