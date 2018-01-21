@@ -1,3 +1,4 @@
+import { ValidationCommandeComponent } from './ValidationCommande/validation-commande.component';
 import { MajordomeComponent } from './majordome/majordome.component';
 import { AnimauxComponent } from './ServiceAnimaux/animaux.component';
 import { AccueilComponent } from './accueil/accueil.component';
@@ -11,7 +12,9 @@ import { AppComponent } from './app.component';
 
 
 const appRoutes: Routes = [
-  { path: 'epicerie', component: EpicerieComponent },
+  { path: 'marchandise', component: EpicerieComponent },
+  { path: 'animaux', component: AnimauxComponent },
+  { path: 'validation-commande', component: ValidationCommandeComponent},
   { path: '', component: AccueilComponent},
   { path: 'animaux', component: AnimauxComponent },
   { path: 'majordome', component: MajordomeComponent },
@@ -22,6 +25,7 @@ const appRoutes: Routes = [
     AppComponent,
     EpicerieComponent,
     AnimauxComponent,
+    ValidationCommandeComponent,
     AccueilComponent,
     MajordomeComponent
   ],
@@ -31,7 +35,7 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

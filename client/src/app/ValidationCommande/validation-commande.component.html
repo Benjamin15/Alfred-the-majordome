@@ -1,0 +1,51 @@
+<div>
+    <!-- MAIN -->
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    <p> {{nArticle}}</p>
+    {{nArticle}} {{nArticle}} {{nArticle}} {{nArticle}} {{nArticle}} {{nArticle}} {{nArticle}}
+    <table>
+    
+    <div *ngFor="let product of achats.entries()">
+        <tr>
+            <div *ngIf="product[0] == 'Fromage'">
+                    <td height="10%" width="30%"><img src="assets/p1.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                     <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>      
+            </div>
+            <div *ngIf="product[0] == 'Pomme'">
+                    <td height="10%" width="30%"><img src="assets/p2.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                    <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>                     
+            </div>
+        <div *ngIf="product[0] == 'Banane'">
+                <td height="10%" width="30%"><img src="assets/p3.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>         </div>
+        <div *ngIf="product[0] == 'Rosbif'">
+                <td height="10%" width="30%"><img src="assets/p4.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>         </div>
+        <div *ngIf="product[0] == 'Canard'">
+                <td height="10%" width="30%"><img src="assets/p5.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>         </div>
+        <div *ngIf="product[0] == 'Saumon'">
+                <td height="10%" width="30%"><img src="assets/p6.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>         </div>
+        <div *ngIf="product[0] == 'Thon'">
+                <td height="10%" width="30%"><img src="assets/p7.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>         </div>
+        <div *ngIf="product[0] == 'Baguette'">
+                <td height="10%" width="30%"><img src="assets/p8.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>         </div>
+        <div *ngIf="product[0] == 'Velo'">
+                <td height="10%" width="30%"><img src="assets/p9.jpg" alt="Img" class="product-grid__img" height="40" width="40" /> </td>
+                <td height="10%" width="30%"> {{product[0]}}</td>  <td height="10%" width="30%"> {{product[1]}} </td>         </div>
+        </tr>
+    </div>
+    </table>
+</div>
+<!-- END MAIN -->
