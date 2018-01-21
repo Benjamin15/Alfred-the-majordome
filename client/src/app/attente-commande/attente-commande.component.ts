@@ -1,3 +1,4 @@
+import { Garderie } from './../ServiceGarderie/garderie.model';
 import { Animal } from './../ServiceAnimaux/animal.model';
 import { RechercheMajordome } from './../RechercheMajordome';
 import { Component } from '@angular/core';
@@ -15,21 +16,26 @@ export class AttenteCommandeComponent implements OnInit, AfterViewInit {
 
     private socket: socketIO.Socket;
     public subjectAnimal = new Subject<Animal>();
+    public subjectGardiennage = new Subject<Garderie>();
     public child = RechercheMajordome.child;
     public magasinage = RechercheMajordome.magasinage;
     public animaux = RechercheMajordome.animal;
     public animal: Animal;
+    public garderie: Garderie;
     ngOnInit() {
         this.socket = socketIO.connect('10.200.10.215:3000');
-    }
-
-    ngAfterViewInit() {
         this.socket.on('animal majordome', (obj) => {
             this.subjectAnimal.next(JSON.parse(obj));
         });
         this.socket.on('gardiennage majordome', (obj) => {
             console.log('Boom');
             console.log(JSON.parse(obj));
+        });
+    }
+
+    ngAfterViewInit() {
+        this.subjectGardiennage.asObservable().subscribe((value) => {
+            this.garderie = value;
         });
         this.subjectAnimal.asObservable().subscribe( (value) => {
             this.animal = value;
