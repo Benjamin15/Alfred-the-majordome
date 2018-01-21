@@ -1,5 +1,15 @@
+.checkbox{
+    margin-top: 20px;
+}
 body {
     background-image: url("/assets/alfred_1.jpg");
     background-color: #cccccc;
     height:660px
+ }
+ .checkbox > label{
+     color: #cccccc;
+ }
+
+ h1{
+    color: #cccccc;
  }
