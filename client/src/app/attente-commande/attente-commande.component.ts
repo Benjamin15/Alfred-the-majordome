@@ -60,7 +60,6 @@ export class AttenteCommandeComponent implements OnInit, AfterViewInit {
         this.subjectGardiennage.asObservable().subscribe((value) => {
             this.garderie = value;
         });
-    ngAfterViewInit() {
         this.subjectAnimal.asObservable().subscribe( (value) => {
             this.animal = value;
         });
