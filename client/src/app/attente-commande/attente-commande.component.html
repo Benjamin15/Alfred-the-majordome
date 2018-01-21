@@ -190,7 +190,7 @@
                             <label>Fin : </label> {{garderie.fin}} 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal" RouterLinkActive="active" [routerLink]="['']">Je confirme.</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" RouterLinkActive="active" [routerLink]="['']" (click)="confirmation()">Je confirme.</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Je refuse.</button>
                         </div>
                     </div>

@@ -73,4 +73,9 @@ export class AttenteCommandeComponent implements OnInit, AfterViewInit {
 
         });*/
     }
+
+    confirmation() {
+        console.log('Confirmé côté majordome');
+        this.socket.emit('confirmation');
+    }
 }
