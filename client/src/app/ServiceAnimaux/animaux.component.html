@@ -1,0 +1,12 @@
+<h1> SERVICE ANIMAUX </h1>
+<h2> Service de gardiennage et de promenade d'animaux </h2>
+<div> Nom de l'animal <input [(ngModel)]='animal.nomAnimal'> </div>
+<div> Nom (Animal) : {{ animal.nomAnimal }} </div>
+<div> Description <input [(ngModel)]='animal.description'> </div>
+<div> Description : {{ animal.description }} </div>
+<div> Besoins spécifiques <input [(ngModel)]='animal.besoinsSpecifiques'> </div>
+<div> Besoins spécifiques : {{ animal.besoinsSpecifiques }} </div>
+
+<button (click)='sauvegarderAnimal()'> Demander le service </button>
+
+
