@@ -11,6 +11,28 @@
     <h2> Service de promenade d'animaux </h2>
     <div> Nom de l'animal:<br /><input [(ngModel)]='animal.nomAnimal'> </div>
     <div> Description <br /><input [(ngModel)]='animal.description'> </div>
-    <div> Besoins spécifiques <br /><input [(ngModel)]='animal.besoinsSpecifiques'> </div>
-    <button type="button" class="btn btn-primary btn-lg" (click)='sauvegarderAnimal()'> Rechercher majordome </button>
+    <div> Besoins spécifiques <br /><input [(ngModel)]='animal.besoinsSpecifiques'> </div> <br />
+    <!-- Button trigger modal -->
+    <button type="button" (click)='sauvegarderAnimal()' class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+        Rechercher majordome
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Recherche d'un majordome</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body" style="background-color: rgb(20,20,20);
+                color: white;text-align:center;">
+                    <img width="100%" src="http://localhost:4200/assets/loading-anime.gif" />
+                    <h1 style="margin-top:-45px;">En attente d'un majordome ...</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
