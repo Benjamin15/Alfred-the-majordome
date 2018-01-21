@@ -1,3 +1,8 @@
+import { MarchandComponent } from './marchand/marchand.component';
+import { BenProfileComponent } from './accueil/majordome_profiles/ben_profile.component';
+import { YounesProfileComponent } from './accueil/majordome_profiles/younes_profile.component';
+import { MarcProfileComponent } from './accueil/majordome_profiles/marc_profile.component';
+import { JoProfileComponent } from './accueil/majordome_profiles/jo_profile.component';
 import { ListMajordomeComponent } from './majordome/listMajordome.component';
 import { AttenteCommandeComponent } from './attente-commande/attente-commande.component';
 import { ServiceGarderieComponent } from './ServiceGarderie/serviceGarderie.component';
@@ -19,9 +24,14 @@ const appRoutes: Routes = [
   { path: 'validation-commande', component: ValidationCommandeComponent, canActivate: [AuthGuard] },
   { path: '', component: AccueilComponent},
   { path: 'majordome', component: MajordomeComponent },
-  { path: 'gardien', component: ServiceGarderieComponent},
+  { path: 'gardiennage', component: ServiceGarderieComponent},
   { path: 'list-Majordome', component: ListMajordomeComponent},
-  { path: 'marchandEnAttente', component: AttenteCommandeComponent  }
+  { path: 'Marc', component: MarcProfileComponent},
+  { path: 'Ben', component: BenProfileComponent},
+  { path: 'Younes', component: YounesProfileComponent},
+  { path: 'Jo', component: JoProfileComponent},
+  { path: 'marchandEnAttente', component: AttenteCommandeComponent  },
+  { path: 'marchand', component: MarchandComponent}
 ];
 
 @NgModule({
@@ -33,8 +43,14 @@ const appRoutes: Routes = [
     AccueilComponent,
     MajordomeComponent,
     ServiceGarderieComponent,
+    ListMajordomeComponent,
+    JoProfileComponent,
+    MarcProfileComponent,
+    YounesProfileComponent,
+    BenProfileComponent,
     AttenteCommandeComponent,
-    ListMajordomeComponent
+    ListMajordomeComponent,
+    MarchandComponent
   ],
   imports: [
     RouterModule.forRoot(
