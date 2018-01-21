@@ -20,6 +20,9 @@ io.on('connection', function(socket) {
         console.log('marchandise recu recu : ', obj);
         socket.broadcast.emit('marchandise majordome', obj);
     });
+    socket.on('confirmation', () => {
+        socket.broadcast.emit('confirmation server');
+    });
 });
 
 http.listen(3000, function() {

@@ -15,8 +15,8 @@ export class AnimauxComponent implements OnInit {
   ngOnInit() {
     this.animal = new Animal('', '', '');
     this.socket = socketIO.connect('10.200.10.215:3000');
-    this.socket.on('confirmation', () => {
-      // vers profil 
+    this.socket.on('confirmation server', () => {
+      // vers profil
       console.log('Confirmation côté client');
     });
   }
