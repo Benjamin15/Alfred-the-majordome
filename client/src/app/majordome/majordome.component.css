@@ -3,9 +3,13 @@
 }
 
 .alfredPhoto {
-    background-image: url("/assets/alfred_1.jpg");
+    background-image: url("/assets/alfred-majordome-outline.jpg");
     background-color: #cccccc;
-    height: 660px
+    height: 500px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    float: left;
 }
 
 .checkbox>label {

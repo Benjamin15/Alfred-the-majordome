@@ -6,8 +6,12 @@
     </div>
 </nav>
 
+
+
 <!-- Page Content -->
 <div class="container" style="margin:60px 35px 10px 35px;padding:25px 12%; color: black">
+    <div class="alfredPhoto">
+    </div>
     <div class="checkbox">
         <label><h1><input type="checkbox" [(ngModel)]="childChosen" ng-init="childChosen = false"> Service de Gardiennage</h1></label>
     </div>
@@ -20,6 +24,4 @@
     <br />
     <button type="button" class="btn btn-primary btn-lg" RouterLinkActive="active" [routerLink]="['marchandEnAttente']">En attente d'un client</button>
 </div>
-
-<div class="alfredPhoto">
-</div>
+<div style="clear:left;"></div>
