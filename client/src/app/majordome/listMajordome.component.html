@@ -6,7 +6,7 @@
 </nav>
 <body>
   
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 73px;">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 0px;">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -15,29 +15,33 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('assets/marc.jpg')">
+        <div class="carousel-item active" style="background-image: url('assets/marc.jpg');opacity:0.7;">
             <a href="/gardien">
                 <div class="carousel-caption d-none d-md-block">
-                    <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['gardiennage']">Service de Gardiennage</button>
+                   <h1> Marc Hounto</h1>
+                    <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['majordomeConfirmation']">Je choisit ce majordome</button>
                 </div>
             </a>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('assets/momo.jpg')">
+        <div class="carousel-item" style="background-image: url('assets/momo.jpg');opacity:0.7;">
             <div class="carousel-caption d-none d-md-block">
-                <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['marchandise']">Epicerie</button>
+                <h1>Benjamin Heinen</h1>
+                <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['majordomeConfirmation']">Je choisit ce majordome</button>
             </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('assets/jo.jpg')">
+        <div class="carousel-item" style="background-image: url('assets/jo.jpg');opacity:0.7;">
             <div class="carousel-caption d-none d-md-block">
-                <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['animaux']">Prise en charge d'animaux</button>
+                <h1>Jonathan Gervais-Ranger</h1>
+                <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['majordomeConfirmation']">Je choisit ce majordome</button>
             </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url('assets/younes.jpg')">
+        <div class="carousel-item" style="background-image: url('assets/younes.jpg');opacity:0.7;">
           <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['animaux']">Prise en charge d'animaux</button>
+              <h1>Younes Ijichi</h1>
+              <button type="button" class="btn btn-info" RouterLinkActive="active" [routerLink]="['majordomeConfirmation']">Je choisit ce majordome</button>
           </div>
       </div>
     </div>
