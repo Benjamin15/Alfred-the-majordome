@@ -4,11 +4,22 @@
     grid-gap: 150px;
     background-color: #2196F3;
     padding: 10px;
-  }
-  .grid-container > a {
+}
+
+.grid-container>a {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid black;
     text-align: center;
     font-size: 30px;
     width: 200px;
-  }
+}
+
+.btn-info {
+    padding: 45px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.col {
+    text-align: center;
+}

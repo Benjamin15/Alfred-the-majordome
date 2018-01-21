@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+.majordomelogo {
+    vertical-align: middle;
+    border-style: none;
+    width: 75px;
+    border-radius: 3em;
+    margin: 10px 10px 10px 20px;
+}
